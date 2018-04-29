@@ -1,7 +1,4 @@
 {
-  "name": "Weather Application",
-  "version": "1.0.0",
-  "description": "Made weather application using Vue, VueX, dark sky API, google API, Bootstrap, Skycons, herokuapp, axios, fontAwsome, SASS, etc.",
   "main": "src/main.js",
   "private": true,
   "scripts": {

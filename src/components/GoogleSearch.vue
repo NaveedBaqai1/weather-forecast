@@ -20,38 +20,37 @@
 </template>
 
 <script>
-export default {
-  name: "GoogleSearch",
-  data() {
-    return {
-      location: null
-    };
-  },
-  computed: {
-    getSearchErrorStatus: function(){
-      return this.$store.getters.getSearchErrorStatus
-    }
-  },
-  methods: {
-    updateLocation(place) {
-      this.location = place;
+  export default {
+    name: "GoogleSearch",
+    data() {
+      return {
+        location: null
+      };
     },
-    updateWeatherData() {
-      if(this.location === null || this.location === "" || this.location === undefined){
-        this.$store.dispatch('updateSearchStatus', true);
-      } else{
-        this.$store.dispatch('updateSearchStatus', false);
-        let locationName = this.location.name;
-        let locationLat = this.location.geometry.location.lat();
-        let locationLng = this.location.geometry.location.lng();
-        this.$store.dispatch('updateLocation', {locationName: locationName, locationLat: locationLat, locationLng: locationLng}).then(() => {
-          this.$store.dispatch('reqWeatherData');
-        });
+    computed: {
+      getSearchErrorStatus: function(){
+        return this.$store.getters.getSearchErrorStatus
       }
-
+    },
+    methods: {
+      updateLocation: function(place) {
+        this.location = place;
+      },
+      updateWeatherData: function() {
+        if(this.location === null || this.location === "" || this.location === undefined){
+          this.$store.dispatch('updateSearchStatus', true);
+        } else{
+          this.$store.dispatch('updateSearchStatus', false);
+          let locationName = this.location.name;
+          let locationLat = this.location.geometry.location.lat();
+          let locationLng = this.location.geometry.location.lng();
+          this.$store.dispatch('updateLocation', {locationName: locationName, locationLat: locationLat, locationLng: locationLng}).then(() => {
+            this.$store.dispatch('reqWeatherData');
+          });
+        }
+      }
     }
-  }
-};
+  };
 </script>
 
 <style lang="sass" scoped>

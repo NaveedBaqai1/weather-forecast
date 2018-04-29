@@ -10,38 +10,36 @@
 </template>
 
 <script>
-
-export default {
-  name: "CurrentForecast",
-  computed: {
-    getLocationName: function(){
-      return this.$store.getters.getLocationName
-    },
-    getWeatherIcon: function(){
-      return this.$store.getters.getWeatherData.currently.icon
-    },
-    getWeatherSummary: function(){
-      return this.$store.getters.getWeatherData.currently.summary
-    },
-    getWeatherTemperature: function(){
-      return this.$store.getters.getWeatherData.currently.temperature
-    },
-    getWeatherHumidity: function(){
-      return this.$store.getters.getWeatherData.currently.humidity
-    },
-    getWeatherWind: function(){
-      return this.$store.getters.getWeatherData.currently.windSpeed
-    },
-  }
-};
+  export default {
+    name: "CurrentForecast",
+    computed: {
+      getLocationName: function(){
+        return this.$store.getters.getLocationName
+      },
+      getWeatherIcon: function(){
+        return this.$store.getters.getWeatherData.currently.icon
+      },
+      getWeatherSummary: function(){
+        return this.$store.getters.getWeatherData.currently.summary
+      },
+      getWeatherTemperature: function(){
+        return this.$store.getters.getWeatherData.currently.temperature
+      },
+      getWeatherHumidity: function(){
+        return this.$store.getters.getWeatherData.currently.humidity
+      },
+      getWeatherWind: function(){
+        return this.$store.getters.getWeatherData.currently.windSpeed
+      },
+    }
+  };
 </script>
 
 <style lang="sass" scoped>
-$fontWeight300: 300;
+  $fontWeight300: 300;
 
-.currentForecast
-  padding: 10px 0px
-  h3, h4
-    font-weight: $fontWeight300
-
+  .currentForecast
+    padding: 10px 0px
+    h3, h4
+      font-weight: $fontWeight300
 </style>
