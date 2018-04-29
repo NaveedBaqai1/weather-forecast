@@ -1,7 +1,7 @@
 {
-  "name": "darkSkyWeatherApplication",
+  "name": "Weather Application",
   "version": "1.0.0",
-  "description": "using dark sky and google api to provide the weather forecast for the user selected location",
+  "description": "Made weather application using Vue, VueX, dark sky API, google API, Bootstrap, Skycons, herokuapp, axios, fontAwsome, SASS, etc.",
   "main": "src/main.js",
   "private": true,
   "scripts": {
@@ -13,10 +13,17 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2",
-    "vuex": "^2.0.0",
     "axios": "^0.18.0",
-    "bootstrap-vue": "^2.0.0-rc.8"
+    "bootstrap-vue": "^2.0.0-rc.8",
+    "moment-timezone": "^0.5.16",
+    "style-loader": "^0.21.0",
+    "vue": "^2.5.2",
+    "vue-carousel-3d": "^0.1.20",
+    "vue-moment": "^3.2.0",
+    "vue-skycons": "^1.0.5",
+    "vue-spinner-component": "^1.0.5",
+    "vue2-google-maps": "0.8.6",
+    "vuex": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -49,6 +56,7 @@
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
     "node-notifier": "^5.1.2",
+    "node-sass": "^4.9.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
@@ -56,6 +64,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "sass-loader": "^7.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",

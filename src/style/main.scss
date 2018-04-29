@@ -1,0 +1,51 @@
+$rem0Point4: 0.4rem;
+$rem0Point6: 0.6rem;
+$rem0Point8: 0.8rem;
+$rem1: 1rem;
+$rem1Point2: 1.2rem;
+$rem1Point4: 1.4rem;
+$rem1Point6: 1.6rem;
+$rem1Point8: 1.8rem;
+$rem2: 2rem;
+
+h1 {font-size: $rem1Point4;}
+h2 {font-size: $rem1Point2;}
+h3 {font-size: $rem1;}
+h4 {font-size: $rem0Point8;}
+h5 {font-size: $rem0Point6;}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  h1 {font-size: $rem1Point4;}
+  h2 {font-size: $rem1Point2;}
+  h3 {font-size: $rem1;}
+  h4 {font-size: $rem0Point8;}
+  h5 {font-size: $rem0Point6;}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {font-size: $rem1Point6;}
+  h2 {font-size: $rem1Point4;}
+  h3 {font-size: $rem1Point2;}
+  h4 {font-size: $rem1;}
+  h5 {font-size: $rem0Point8;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {font-size: $rem1Point8;}
+  h2 {font-size: $rem1Point6;}
+  h3 {font-size: $rem1Point4;}
+  h4 {font-size: $rem1Point2;}
+  h5 {font-size: $rem1;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {font-size: $rem2;}
+  h2 {font-size: $rem1Point8;}
+  h3 {font-size: $rem1Point6;}
+  h4 {font-size: $rem1Point4;}
+  h5 {font-size: $rem1Point2;}
+}
