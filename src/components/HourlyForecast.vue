@@ -9,14 +9,8 @@
             <div class="slideContent">
                <h2>{{ item.time | moment('timezone', getTimeZone, 'calendar') }}</h2>
                <skycon :condition="getWeatherIcon" :width="128" :height="128"/>
-               <div class="row">
-                  <div class="col-md-6">
-                     <h3>{{ item.temperature }} &degF</h3>
-                  </div>
-                  <div class="col-md-6">
-                     <h3>{{ item.summary }}</h3>
-                  </div>
-               </div>
+                  <h3>{{ item.temperature }} &degF</h3>
+                  <h3>{{ item.summary }}</h3>
             </div>
          </slide>
    </carousel-3d>
