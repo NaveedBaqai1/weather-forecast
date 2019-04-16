@@ -2,7 +2,7 @@
    <div class="dailyForecast">
       <h1>Daily Weather Forecast</h1>
       <div class="row">
-         <div class="col-md-4" v-for="(item, index) in getWeatherDailyForecast" v-if="index > 0">
+         <div class="col-md-4" v-if="getWeatherDailyForecast.length > 0" v-for="(item, index) in getWeatherDailyForecast">
             <div class="shadow p-3 mb-5 bg-white rounded">
                <h2>{{ item.time | moment('timezone', getTimeZone, 'dddd') }}</h2>
                <h4>{{ item.time | moment('timezone', getTimeZone, 'MMM Do') }}</h4>
